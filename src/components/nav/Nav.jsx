@@ -14,7 +14,7 @@ export function NavBar() {
       <div className="hidden md:flex">
         <p >Portafolio Dev</p>
       </div>
-     <div className="flex items-center justify-between h-full w-full">
+     <div className="flex items-center justify-center gap-20 h-full w-full">
        {sections.map((section) =>
       (
 
