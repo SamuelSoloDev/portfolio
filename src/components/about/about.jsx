@@ -1,4 +1,4 @@
-
+import { Link } from "../generic/link";
 
 export function About() {
   return(
@@ -19,9 +19,9 @@ export function About() {
       </div>
       <div className="flex flex-col w-10/12 text-2xl gap-5">
         <h3 className="text-3xl">Contacto:</h3>
-        <a href="">Git hub</a>
-        <a href="">Email</a>
-        <a href="">LinkedIn</a>
+        <Link classes={"w-5/12 border border-green-400 border-solid"}>Git hub</Link>
+        <Link classes={"w-5/12 border border-green-400 border-solid"}>Email</Link>
+        <Link classes={"w-5/12 border border-green-400 border-solid"}>LinkedIn</Link>
       </div>
     </div>
   )
