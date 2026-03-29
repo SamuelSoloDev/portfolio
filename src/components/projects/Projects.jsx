@@ -6,11 +6,15 @@ cómo el nombre, una imagen y el link */
 
 export function Projects() {
   return(
-    <section className="min-h-dvh m-0 bg-[#e7e9e9] dark:bg-[#204430c4] justify-center items-center
-    flex flex-col gap-10 md:flex-row pb-10" id="projects">
-      <h2 className="text-5xl font-bold leading-tight tracking-tight">Proyectos</h2>
-      <Card></Card>
-      <Card></Card>
+    <section className="min-h-dvh m-0 p-5 md:pt-12 bg-[#e7e9e9] dark:bg-[#204430c4] justify-center items-center
+    flex flex-col gap-10 pb-10" id="projects">
+      <h2 className="text-5xl font-bold leading-tight tracking-tight
+      text-slate-900 dark:text-slate-100">Proyectos</h2>
+      <div className="flex flex-col md:flex-row gap-5 h-10/12">
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </div>
     </section>
   )
 }

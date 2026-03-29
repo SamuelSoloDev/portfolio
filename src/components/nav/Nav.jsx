@@ -6,15 +6,15 @@ export function NavBar() {
   return(
     <nav className="flex items-center justify-between  w-full h-1/12
        px-6 md:px-10 py-4 border border-slate-200  border-solid
-     bg-white dark:bg-background-dark/50 backdrop-blur-md fixed bottom-0 z-50
-     p-0
-     md:static md:border-b md:border-[#13ec6d]/10 md:whitespace-nowrap
+     bg-[#f6f8f8]/80 dark:bg-[#102218c4]/90 backdrop-blur-md fixed bottom-0 z-50
+     p-4
+     md:top-0 md:border-b md:border-[#13ec6d]/10 md:whitespace-nowrap
      md:gap-100
     ">
       <div className="hidden md:flex">
         <p >Portafolio Dev</p>
       </div>
-     <div className="flex items-center justify-center gap-20 h-full w-full">
+     <div className="flex items-center p-10 justify-center gap-15 h-full w-full">
        {sections.map((section) =>
       (
 

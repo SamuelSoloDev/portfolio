@@ -2,7 +2,9 @@ import { Link } from "../generic/link";
 
 export function Card(params) {
   return(
-    <div className="w-11/12 min-h-9/12 m-auto border-solid relative
+    <div className="w-11/12  m-auto border-solid relative
+    max-h-180
+    max-w-150
     overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-s">
 
       <div className="w-full h-100 top-0">
@@ -11,8 +13,8 @@ export function Card(params) {
       </div>
       <div className=" h-full
       flex flex-col">
-        <h3 className="text-2xl p-3">Quest Board</h3>
-        <p className="h-8/12 m-3 text-xl">
+        <h3 className="text-2xl p-3 text-slate-900 dark:text-slate-100">Quest Board</h3>
+        <p className="h-8/12 m-3 text-md md:text-sm text-slate-600 dark:text-slate-100">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Non ad voluptatum architecto odit doloremque cumque,
           minima vel at tempore minus consequatur
@@ -21,10 +23,10 @@ export function Card(params) {
         </p>
         <div className="flex flex-row gap-5 h-full items-center justify-center p-3">
           <Link
-          classes={"w-6/12 border h-12 border-green-400 border-solid"}
+          classes={"w-6/12 h-12 border border-green-400 border-solid px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}
           ><p>Ver en Git hub</p></Link>
           <Link
-          classes={"w-6/12 border h-12 border-green-400 border-solid"}
+          classes={"w-6/12 border h-12 border-green-400 border-solid bg-green-400"}
           ><p>Ir a la app</p></Link>
         </div>
       </div>
