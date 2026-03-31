@@ -1,4 +1,5 @@
 import { ButtonRef } from "./href";
+import { Title } from "../generic/title";
 
 export function NavBar() {
   const sections = ["Hero", "Projects", "About me", "Tecnologies"]
@@ -12,7 +13,7 @@ export function NavBar() {
      md:gap-100
     ">
       <div className="hidden md:flex">
-        <p >Portafolio Dev</p>
+        <Title></Title>
       </div>
      <div className="flex items-center p-10 justify-center gap-15 h-full w-full">
        {sections.map((section) =>

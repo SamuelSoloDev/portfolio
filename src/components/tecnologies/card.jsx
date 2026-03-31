@@ -10,7 +10,7 @@ export function Card({name, logo}) {
 
       <img src={logo} alt=""
       className="min-h-20 min-w-15" />
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-primary group-hover:bg-primary/10 transition-colors">
+      <div className="mb-4 flex h-12 min-w-12 items-center justify-center rounded-lg bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-primary group-hover:bg-primary/10 transition-colors">
         <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">{name}</h3>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { Link } from "../generic/link";
+import github_logo from "../../assets/github.svg";
 
 export function Card(params) {
   return(
@@ -24,7 +25,8 @@ export function Card(params) {
         <div className="flex flex-row gap-5 h-full items-center justify-center p-3">
           <Link
           classes={"w-6/12 h-12 border border-green-400 border-solid px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}
-          ><p>Ver en Git hub</p></Link>
+          ><div className="flex gap-4"><span><img className="w-10 h-10" src={github_logo} alt="" /></span>
+          <p>Ver en Github</p></div></Link>
           <Link
           classes={"w-6/12 border h-12 border-green-400 border-solid bg-green-400"}
           ><p>Ir a la app</p></Link>
