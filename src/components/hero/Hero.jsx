@@ -1,5 +1,8 @@
 import { StyledButton } from "../generic/button"
 import { Link } from "../generic/link";
+import github_logo from "../../assets/github.svg";
+import pdf_logo from "../../assets/pdf.svg";
+
 
 export function Hero({text}) {
   return (
@@ -16,7 +19,7 @@ export function Hero({text}) {
        dark:border-slate-800 shadow-xl  overflow-hidden" alt="profile_picture" />
 
       <div className="flex flex-col gap-5 justify-center items-center">
-        <header className="text-5xl text-center  text-slate-900 dark:text-slate-100"> Frontend Developer</header>
+        <header className="text-5xl text-center md:pt-8 text-slate-900 dark:text-slate-100"> Frontend Developer</header>
       <div className="w-10/12 gap-5
       flex flex-col items-center text-center">
         <h2 className="text-5xl font-extrabold leading-tight tracking-tight flex flex-col
@@ -30,11 +33,13 @@ export function Hero({text}) {
       </div>
        <div className="flex flex-col w-9/12 gap-4 ">
         <StyledButton
-        classes={"w-full border border-green-400 border-solid bg-[#13ec6d] h-9 "
+        classes={"w-full flex items-center justify-center gap-3 border border-green-400 border-solid bg-[#13ec6d] h-9 "
         }>
+          <img className="w-6 h-6 object-contain" src={pdf_logo} alt="GitHub logo" />
           <p>Descargar CV</p>
         </StyledButton>
-        <Link classes={"w-full border border-green-400 border-solid  h-9 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}>
+        <Link classes={"w-full flex items-center justify-center gap-3 border border-green-400 border-solid  h-9 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}>
+          <img className=" bg-white rounded-full w-6 h-6 object-contain" src={github_logo} alt="GitHub logo" />
           <p>Ver Proyectos</p>
         </Link>
       </div>

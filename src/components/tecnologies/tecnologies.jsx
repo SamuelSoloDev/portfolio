@@ -15,7 +15,7 @@ export function Tecnologies(){
       md:grid-cols-3 md:grid-rows-2
       w-8/12
       place-items-center
-      border-amber-300 border">
+      ">
         <Card name={"HTML"}
         logo={html_logo}></Card>
         <Card name={"CSS"}
