@@ -11,7 +11,7 @@ function App() {
 
   return (
   <div className='bg-[#f6f8f8] dark:bg-[#102218c4] p-0 w-full h-full'>
-    <Title classes={"min-h-10 w-full md:hidden bg-[#f6f8f8]/80 dark:bg-[#102218c4]/80"}></Title>
+    <Title classes={"min-h-10 max-h-15 w-full md:hidden bg-[#f6f8f8]/80 dark:bg-[#102218c4]/80"}></Title>
     <NavBar></NavBar>
     <Hero></Hero>
     <Projects></Projects>

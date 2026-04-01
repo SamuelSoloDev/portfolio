@@ -4,6 +4,9 @@ import linkedin_logo from "../../assets/linkedin.svg";
 import gmail_logo from "../../assets/gmail.svg";
 
 export function About() {
+  const email = "samuelsolodev@gmail.com";
+  const subject = encodeURIComponent("Consulta sobre el servicio");
+  const body = encodeURIComponent("Hola, me gustaría recibir más información.")
   return(
     <div id="aboutme"
     className="min-h-dvh flex flex-col items-center p-10 gap-10">
@@ -21,15 +24,21 @@ export function About() {
       </div>
       <div className="flex flex-col w-10/12 text-2xl gap-5">
         <h3 className="text-3xl text-slate-900 dark:text-slate-100">Contacto:</h3>
-        <Link classes={"w-7/12 max-w-50 flex items-center justify-center gap-3  border border-green-400 border-solid  h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}>
+        <Link url={"https://github.com/SamuelSoloDev"}
+        classes={"w-7/12 max-w-50 flex items-center justify-center gap-3  border border-green-400 border-solid  h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}>
           <img className=" bg-white rounded-full w-6 h-6 object-contain" src={github_logo} alt="GitHub logo" />
           <p>Github</p>
         </Link>
-        <Link classes={"w-7/12 max-w-50 flex items-center justify-center gap-3 border border-green-400 border-solid  h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}>
+        <button onClick={() => window.location.href = `mailto:${email}?subject=${subject}&body=${body}`}
+        className="w-7/12 max-w-50 gap-3 rounded-xl flex items-center justify-center
+        border-solid  h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900
+         dark:text-slate-100 text-base font-bold border border-slate-300
+         dark:border-slate-700 active:scale-95 transition-transform">
           <img className="w-6 h-6 object-contain" src={gmail_logo} alt="Email logo" />
           <p className="font-bold text-center text-lg"> E-mail</p>
-        </Link>
-        <Link classes={"w-7/12 max-w-50 flex items-center justify-center gap-3 border border-green-400 border-solid  h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}>
+        </button>
+        <Link url={"https://www.linkedin.com/in/samuel-solórzano-3374b53"}
+        classes={"w-7/12 max-w-50 flex items-center justify-center gap-3 border border-green-400 border-solid  h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold border border-slate-300 dark:border-slate-700 active:scale-95 transition-transform"}>
           <img className="w-6 h-6 object-contain" src={linkedin_logo} alt="LinkedIn logo" />
           <p>LinkedIn</p>
         </Link>
