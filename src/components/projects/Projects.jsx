@@ -1,6 +1,6 @@
 import { Card } from "./card";
 import finance_screenshot from "../../assets/screenshots/finance.png";
-import questboard_screenshot from "../../assets/screenshots/questboard.png";
+import questboard_screenshot from "../../assets/screenshots/questboard.PNG";
 
 /* Se espera que se cree un archivo Javascript con los datos de los proyectos
 cómo el nombre, una imagen y el link */
